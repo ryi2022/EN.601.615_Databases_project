@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title> lyang_ryi5_project </title>
+	</head>
+	<body>
+		<h1> Check the Populations (total and health-related) of the Country of Interest </h1>
+		<ul>
+			<li>Data collected from WHO and common coutry information.</li>
+			<li>Blank means missing (null) value in the original dataset.</li>
+		</ul>
+		<form action="ShowPopulations.php" method="post">
+			Country -> Populations: <input type="text" name="country"><br>
+		<input type="Submit">
+		</form>
+		<p></p>
+		<p>
+			<hr style="height:2px;border-width:0;color:yellowgreen;background-color:
+			yellowgreen">
+		</p>
+		<p></p>
+		<h1> Select the Query of Interest </h1>
+		<ul>
+			<li>Some queries may take a minute to execute. Please wait patiently. </li>
+			<li>Data collected from WHO and common coutry information.</li>
+			<li>Blank means missing (null) value in the original dataset.</li>
+		</ul>
+		<!-- Creates a dropbox for query selection. -->
+		<form id="myForm" action="Results.php" method="get">
+			<select name="queries" onchange="document.getElementById('myForm').submit();">
+				<option value="">Choose one query</option>
+				<option value="Get1">List countries with an urbanization rate over 80% and basic sanitation facilities below the average.</option>
+				<option value="Get2">Identify the top 10 countries in terms of educational investment and analyze the trend in adolescent pregnancy rates in these countries from 2010 to 2019.</option>
+				<option value="Get3">Among the countries with the highest tax rates, list those where the female suicide rate exceeds the male suicide rate.</option>
+				<option value="Get4">Find countries where the smoking rate among women is higher than men, and list their birth rates, urbanization rates, and health expenditures.</option>
+				<option value="Get5">List countries where the basic handwashing facility was below average in 2017 and the incidence of malaria was over 70% that year.</option>
+				<option value="Get6">Identify countries with low GDP per capita but high life satisfaction scores and analyze the trend in their suicide rates from 2010 to 2020.</option>
+				<option value="Get7">In countries with a corruption rate greater than 0.5, list those with the highest suicide rates, including their GDP, minimum wage, and total tax rate.</option>
+				<option value="Get8">List the five countries with the least nursing services and their rates of infant mortality.</option>
+				<option value="Get9">List countries with the highest average annual incidence of tuberculosis, including their CO2 emissions and gasoline prices.</option>
+				<option value="Get10">List countries with a labor force participation rate over 0.7 and an unemployment rate below 0.05, including their scores for life satisfaction and average annual number of nurses and midwives.</option>
+			</select>
+		</form>
+
+
+	</body> 
+																																																			        
+</html>
